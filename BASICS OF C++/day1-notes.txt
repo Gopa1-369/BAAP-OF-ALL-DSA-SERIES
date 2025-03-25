@@ -1,0 +1,343 @@
+               >>>>>>>.   what is programming   <<<<<<<<
+
+   //nepali man come india know only nepali
+   //he hire the workere of india who know only hindi
+   //but communication gap of hindi and nepali
+   // so he hire the tranlator who know both nepali and hindi
+   // so neapli direct taklk with trasnlator in nepali and it convert in hindi to workere
+
+
+  // in computer 
+    //our computer know only binary language (0,1)
+    // as a human for us binary is difficulty to read and write we know only hindi ,english...
+    //as a human we want to done work by computer we can't becuse it not understad our language hindi or english  computer know binary language
+    // so here also translator(know our language and binary) which convert our language into binary language which is called by "compiler"
+
+// so c++,java etc which is row english
+//so programmig langauge is which need to communication with computer
+
+  c++,java... ->  high level langauges
+  binary language -> low-level langauges
+
+
+           
+           
+            >>>>>>  understanding bolierplat <<<<<<
+
+  // any program of c++ writen inside 
+      int main(){  //enry point or main function
+
+       //programming code of c++
+
+      }    //exit point
+
+
+    // int -> return type
+        //means what or which value int main(){}   return 
+        //we will learn in function chapeter
+    // main -> function name
+
+    // {} -> scope of function
+
+    // cout -> print the value
+    // "Alpha intern" ->string which is print by cout
+    
+    // ; -> semicolon as terminate the code   is necessary at the ending of coding line
+
+
+    // we see error becuse of above code  because
+      //compiler not know what cout what to do
+      // so we need to tell the compiler what the cout do
+      // and working defination is put inside <iostream> header file
+      // so we need to include this header file at the top of the code
+          #include<iostream>
+
+    // after include we try to run also see the error
+      //by example
+        //there is calssroom with student
+        //professor come and say to virat to stand up
+        //but there is two virat whose roll number virat1 :27 virat2 :5
+        //so which virat stand
+        //and confuse arrise
+        //but professer add additional information which is rollnumber of that virat number
+        //now the exact virat is stand up
+
+        //in error you see "do you means std::cout" means
+       // compiler say that you want to use cout but i have(compiler) have lot's of cout defination  so which you want to use
+       // so compiler has confusion so we resolve by using some additional information by using 
+        
+                    using namespace std; 
+                means inside put cout defination we use in code
+           
+        //so in c++ code necessary thing is
+          #include<iostream>
+          using namespace std;
+          int main(){  //code     }
+
+
+  
+
+
+           >>>>>>>>Printing and esacape sequence <<<<<<<
+
+    // in int main 
+       cout<<"ram";
+       cout<<"sita";
+
+       output:ramsita
+
+    //here the below cout is stick with gopal but i want in new line
+          cout << "ram"
+          cout << "sita"
+
+          output:ramsita
+    //for that we use esacape sequence ex:endl
+          cout<<"ram"<<endl;
+          cout<<"sita" 
+
+             "or"
+
+          cout << "ram \n";
+          cout << "sita"
+
+          output:ram
+                 sita
+
+
+      
+
+    >>>>>>>   Variables and their declaration and Datatype <<<<<<<<<<
+ 
+ // in any programming at the end goals is stroe  data and retrive that data  
+ // so i write program and  in this program i save the data that data save inside computer memory
+ //in memory where data save computer give tha memoey address to that place and this adress is in any form like hexadecimal
+ // so we want retrive store data but problem is i can't remember the memory address given by computer to that data in memory
+ // so there is solution come that we give the name which we understand to that data 
+ // so data in memory store with that name and we can retrive that data with our manually given name
+
+ // variable defination ->  named memoey location
+
+ // variable declaration syntax process
+
+       Datatype variablename = value
+      ex: int  a = 5
+        int -> Datatype
+        a   -> variable name
+        5   -> value
+                
+        // so whenever we declare the variable 
+        // the box is created for  data and that box have memory address(hexadecimal type)
+        // the box have name is  varible name 
+                ex from above: a
+        // and which type of data store inside box it depend upon data type 
+              ex from above: int
+        // and inside that box after = value is store
+              ex from above :5
+
+  // data type 
+     // if we write 
+         int a= 5   
+         so here data type is int means the varibale is store only integer data type ex: 5,6,7     not 4.7,"hello",true,false
+
+      // if we write 
+         float a =5.7
+         so here data type is float means the variable is store only decimal value ex:6.7,5.7      not "hello",true ,false
+
+              //her 8 is integer and we use with float datatype
+                // so ouput is is form of deciaml which is  8.0 
+                // Since 8 is an integer, k stores it as 8.0, but cout by default removes trailing zeros.
+              // solution to print 8.0 is   cout << fixed << setprecision(1);  befor cout<<k   and on top #include <iomanip>
+                 float k =8;
+                cout << fixed << setprecision(1);
+                 cout<< k;
+
+      //if we write
+         char a = "v"
+         so here data type is char means the variable is store only one character value in  single quotes
+
+            //if we simple write character like 'a' ,'#','$','1' etc so it print same as we write
+              char a = 'a'    out:a
+              char b = '#'    out:#
+
+              //here 1 is inside single quote means it is string
+              // and output is 1 is not a number but character
+              char c =  "1"    out:1
+      
+          // there is standara called ASCII (American Standard Code for Information Interchange)
+             // if we write like 
+                char a = 65   out:A  
+                //because in ASCII representation 65 ASCII value character represnataion is A
+
+  / here 65 converted in character A based on ASCII representation
+//in ASCII representation ASCII value 65 character value is A
+    char d = 66;
+    cout<<d;
+
+//if we write 8.5 so there is no output with no error and also remove previous d 
+ 
+char e = 8.5;
+cout<<e;
+
+//beacus char can only store integer values (0-255 in ASCII)
+// 8.5 is a floating-point number (decimal).
+// char e = 8.5; → The .5 part is truncated (ignored), and only 8 is stored.
+// ASCII 8 is a non-printable control character (Backspace)
+// char e = 8.5; stores 8, which is the Backspace (\b) character in ASCII.
+// When cout << e; executes, it erases the previous character (B from d), making it seem like d never printed.
+// Backspace (\b) removes the last printed character from the console.
+
+//solution: Use only printable ASCII values (32-126) for visible output
+
+
+
+
+
+              >>>>>>> updation of varaibale <<<<<<<<<<<
+
+int a = 5;
+    a = a + 6;
+    cout << a;              ouput: 11
+
+
+
+    in maths,
+       // a = a  6 is not valid
+       //because a-a =6
+      // 0 = 6 
+      // so 0 never equal to 6
+
+     in  programmig;
+       where varaibale is container
+
+       when we write 
+          int a =5
+          so in memory box created wtih name of a and inside 5 is store
+
+        after that we write 
+          a = a+6
+           so in meomey where a name box add the value 6 to that box value
+
+
+
+
+
+
+          >>>>>>>>>>>>>>>>>>>   operator <<<<<<<<<<<<<<<<<<<<<<<
+
+//Types of operator
+
+  //Assignment operator
+      ex: = , += , -= , /= , %= 
+       //increment and decrement operaters
+  
+  // modulo operator
+    //it is one type pf division which give remainder as a output
+    //case:1
+     if a>b give reaminder as output
+    //case:2
+     if a<b give a as output
+
+//Relational operator
+
+     int x=8;
+    int y=5;
+
+    //EQUAL TO operator
+    // it compare x value with y that both are same or not
+    //if not same so output is false(0) 
+    //if same so output is false (1)
+    int z=(x==y);
+    cout<<"for check same value : "<<z<<endl;
+
+
+    //NOT EQUALTO operator
+    //it compare x value with y that both are same or not
+    //if not same so output is true(1)
+    //if same so output is true(0)
+
+    int k=(x!=y);
+    cout<<"for check not same value:  "<<k<<endl;
+
+
+    //greater then
+    int r=(x>y);
+    cout <<"x is greater value then y : "<< r<<endl;
+
+    //less then
+    int m=(x<y);
+    cout << "y is  greate value then x : : "<<m<<endl;
+
+    //logical and (&&)
+      it return true only when  both condition is true 
+      if not so it return false
+          ex: bool a=true  ;
+              bool b =true;
+              cout << a&&b ;  output:true(1)
+
+              bool a= true;
+              bool b=false;
+              cout << a&&b  output:false(0)
+
+
+      //logical or (||)
+         it return false only when both condition is false
+         if not so it return true
+          bool g = true;
+    bool j = false;
+    cout << "logical or "<<(g||j);
+
+
+
+                >>>>>>>>>> taking input in c++ <<<<<<<<<
+
+   int a;
+    cout << "enter the number : ";
+    cin >> a;   //for take input
+    cout << a;
+
+
+
+
+
+
+                        >>>>>>>>> type casting  <<<<<<<
+
+   //converting one datatype to another datatype
+     ex: int -> float  ,  flaot -> int,  char -> int
+
+    //type casting is two type
+        1.implicit typecasting
+       2.explicit typecasting
+    
+                        1.implicit typecasting
+
+     //automatically converting one data type to another
+     //we need to do nothing, automatically complier convert one data type to another data type
+      
+
+      //compiler only perform operation if both data type is same, but here differnt data type in use so using type casting we perform operation
+          ex:   int num = 100;
+            float  b= 5.5;
+
+         float result = num + b;       //type casting
+            cout << result;
+   //here we can do type casing in both int and float but for accurate result we write float
+
+
+                              2.explicit type casting
+                              
+      // in this not compiler covert in another data type but we convert
+        manually in  another datatype
+        ex:1  float p = 3.14;
+             int a = (int)p;     //explicit type casting
+
+              cout << a;    output:3
+       
+
+        
+        
+
+
+     
+
+
