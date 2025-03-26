@@ -1,0 +1,60 @@
+       >>>>>>>>  Intro to if else <<<<<<
+
+   // there is crush with you want to go for date
+   // you go to her and ask for go to date
+   //if she reply yes so you go to date
+   //if she reply no so you not go to date
+
+   //when you go to crush her respond either yes or no based on date decide  so it's called condition(yes or no)
+
+   //same condition rule apply in programming
+      there is condition based on code execute
+
+ //syntax of condition(if else)
+   if(condition){
+      // condition true so if{}  code execute
+   }else{
+      // condition false so else{} code execute
+
+   }
+
+
+        >>>>>>>> Multiple condition using && and || <<<<<<<<<<
+
+   ex:// take positive integer input and tell if it is a three-digit number or not
+
+int main(){
+    int a;
+    cout <<"Enter the number: ";
+    cin >> a;
+  
+  //here multiple conditon take and both true then if blok is print
+    if(a>=100 && a<=999){
+        cout <<"The number is Three digit number";
+    }else{
+   
+    }
+      
+}
+
+
+                 >>>>>>>> NESTED IF ELSE <<<<<<<<<<<
+
+//if else inside if else is called NESTED IF ELSE
+
+
+ex:
+if(){
+   if(){
+      if(){
+
+      }else{
+
+      }
+
+   }else{
+
+   }
+}else{
+
+}
